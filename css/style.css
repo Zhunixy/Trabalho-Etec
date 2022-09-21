@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.logo {
+    float: left;
+    width: 100px;
+    height: 60px;
+    padding: 6px;
+    margin-right: 39rem;
+}
+
+nav {
+    display: flex;
+    background: transparent;
+}
+
+nav ul li {
+    float: left;
+    padding: 13px;
+    list-style: none;
+
+}
+
+nav ul li a {
+    font-size: 17px;
+    color: rgb(231, 231, 231);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-size: 17px;
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+
+}
+
+header {
+    margin-top: 15rem;
+    margin-left: 7rem;
+}
+
+header h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: rgb(228, 228, 228);
+}
+
+header p {
+    color: rgb(114, 114, 114);
+}
+
+header button {
+    margin-top: 20px;
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0);
+    background: rgb(0, 0, 0);
+    transition: all 0.3s;
+}
+
+header button:hover {
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0);
+}
