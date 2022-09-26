@@ -15,6 +15,7 @@
     margin-right: 39rem;
 }
 
+
 nav {
     display: flex;
     background: transparent;
@@ -35,7 +36,7 @@ nav ul li a {
     transition: all 0.3s;
 }
 
-nav ul li:hover{
+nav ul li:hover {
     transition: all 0.4s;
     transform: translateY(2px);
 }
@@ -88,45 +89,45 @@ header button:hover {
 }
 
 
-#inputAddress{
+#inputAddress {
     width: 22.5rem;
 }
 
-#inputAddress2{
+#inputAddress2 {
     width: 46rem !important;
     height: 7rem !important;
 }
 
-.form-label2{
+.form-label2 {
     width: 30rem !important;
 }
 
-.btn{
+.btn {
     width: 10rem !important;
     height: 3.5rem;
 }
 
-.contato{
+.contato {
     margin-top: 10rem;
     margin-bottom: 8rem;
     text-align: center;
 }
 
-.form-control{
+.form-control {
     border: none !important;
     border: 2px solid black !important;
     border-radius: 1px !important;
     margin: 10px;
 }
 
-.form-select{
+.form-select {
     border: none !important;
     border: 2px solid black !important;
     border-radius: 1px !important;
     margin: 10px;
 }
 
-.row{
+.row {
     background: transparent;
     border: 2px solid black;
     padding: 20px;
