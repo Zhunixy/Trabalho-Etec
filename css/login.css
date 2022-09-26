@@ -98,6 +98,37 @@ input {
     transition: all 0.2s;
 }
 
+.btn3 {
+    width: 10rem;
+    height: 3rem;
+    padding: 4px;
+    border-radius: 2rem;
+    margin-left: 13rem;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 2px 2px black;
+    transition: all 0.2s;
+
+}
+
+.btn3:hover {
+    width: 10rem;
+    height: 3rem;
+    padding: 4px;
+    border-radius: 2rem;
+    background: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 2px 2px black;
+    transform: scale(1.2);
+    transition: all 0.2s;
+    background: #000000;
+    color: white;
+}
 
 .btn2:hover {
     width: 10rem;

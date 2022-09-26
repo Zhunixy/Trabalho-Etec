@@ -40,4 +40,3 @@ if($usuario == "jose" && $senha == "jose"){
 
 
 
-
