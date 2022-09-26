@@ -87,3 +87,50 @@ header button:hover {
     background: rgba(255, 255, 255, 0);
 }
 
+
+#inputAddress{
+    width: 22.5rem;
+}
+
+#inputAddress2{
+    width: 46rem !important;
+    height: 7rem !important;
+}
+
+.form-label2{
+    width: 30rem !important;
+}
+
+.btn{
+    width: 10rem !important;
+    height: 3.5rem;
+}
+
+.contato{
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+
+.form-control{
+    border: none !important;
+    border: 2px solid black !important;
+    border-radius: 1px !important;
+    margin: 10px;
+}
+
+.form-select{
+    border: none !important;
+    border: 2px solid black !important;
+    border-radius: 1px !important;
+    margin: 10px;
+}
+
+.row{
+    background: transparent;
+    border: 2px solid black;
+    padding: 20px;
+    margin-left: 5rem !important;
+    width: 50rem !important;
+    display: flex !important;
+}
