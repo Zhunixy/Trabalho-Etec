@@ -11,27 +11,18 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-hr {
-    position: relative;
-    top: 20px;
-    border: none;
-    height: 1px;
-    background: black;
-    margin-bottom: 50px;
-
-}
-
 .main {
     position: relative;
     left: 65%;
     width: 668px;
     height: 1000px;
-    padding: 110px;
+    padding: 80px;
     background: rgb(255, 255, 255);
 }
 
 .icon {
     margin-bottom: 40px;
+    cursor: pointer;
 }
 
 .barra {
@@ -96,7 +87,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background-color: rgb(0, 0, 0);
-    border-radius: 20px;
+    border-radius: 10px;
     border: 4px solid rgb(0, 0, 0);
     height: 30px;
 }
