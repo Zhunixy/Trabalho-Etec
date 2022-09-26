@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
 
 :root {
     --color-nav-light: 	#FFFAFA ;
@@ -10,23 +12,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body {
     background-color: rgb(255, 255, 255);
 }
 
-
-
-
-.menu {
-    width: auto;
-    background: var(--color-nav-dark);
+.nav {
+    width: 100%;
+    background: transparent;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
     height: 100px;
+    position: fixed;
+    top: 0;
 }
 
 .info {
@@ -77,6 +79,29 @@ body {
     color: rgb(255, 255, 255);
 }
 
+#bnt-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #bnt-mobile {
+        display: block;
+    }
+    #menu-ul {
+        display: none;
+    }
+    .nav.active #menu{
+
+    }
+}
+
+
+
+
+
+
+
+
 .meio {
 
     width: auto;
@@ -84,10 +109,6 @@ body {
     margin-top: 25rem;
     padding: auto;
 }
-
-
-
-
 
 
 .final {
