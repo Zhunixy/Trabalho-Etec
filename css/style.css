@@ -135,3 +135,22 @@ header button:hover {
     width: 50rem !important;
     display: flex !important;
 }
+
+.h1-sobre{
+    margin-top: 10rem;
+}
+
+.img{
+    margin-left: 26rem !important;
+    background: rgb(255, 239, 239) !important;
+    margin: 20px;
+}
+
+.gx-5{
+    border: none !important;
+}
+
+.title{
+    font-size: 4rem;
+    width: 30rem;
+}
