@@ -15,10 +15,38 @@
     margin-right: 39rem;
 }
 
+.banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.banner header {
+    z-index: 1;
+    margin-right: 75rem;
+    margin-bottom: 10rem;
+}
 
 nav {
     display: flex;
     background: transparent;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 60px;
 }
 
 nav ul li {
@@ -31,9 +59,10 @@ nav ul li {
 
 nav ul li a {
     font-size: 17px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 nav ul li:hover {
@@ -43,7 +72,7 @@ nav ul li:hover {
 
 nav ul li a:hover {
     font-size: 17px;
-    color: rgb(163, 163, 163);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transform: translateY(2px);
     transition: all 0.3s;
@@ -58,11 +87,11 @@ header {
 header h1 {
     font-size: 4rem;
     margin-bottom: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 header p {
-    color: rgb(0, 0, 0);
+    color: rgb(218, 216, 216);
 }
 
 header button {
@@ -70,9 +99,9 @@ header button {
     width: 18rem;
     height: 2.5rem;
     border-radius: 2rem;
-    color: white;
+    color: rgb(0, 0, 0);
     border: 2px solid rgba(255, 255, 255, 0);
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     transition: all 0.4s;
 }
 
@@ -83,8 +112,8 @@ header button:hover {
     width: 18rem;
     height: 2.5rem;
     border-radius: 2rem;
-    color: rgb(0, 0, 0);
-    border: 2px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
     background: rgba(255, 255, 255, 0);
 }
 
@@ -136,21 +165,21 @@ header button:hover {
     display: flex !important;
 }
 
-.h1-sobre{
+.h1-sobre {
     margin-top: 10rem;
 }
 
-.img{
+.img {
     margin-left: 26rem !important;
     background: rgb(255, 239, 239) !important;
     margin: 20px;
 }
 
-.gx-5{
+.gx-5 {
     border: none !important;
 }
 
-.title{
+.title {
     font-size: 4rem;
     width: 30rem;
 }

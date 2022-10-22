@@ -11,6 +11,13 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-top: 5rem;
+    margin-left: 200px;
+}
+
 .main {
     position: relative;
     left: 65%;
@@ -36,6 +43,13 @@ body {
     border-bottom: 2px solid black;
 }
 
+#masc {
+    margin-left: 20px;
+    background-color: #eee;
+    cursor: pointer;
+    border: solid white;
+}
+
 .btn {
     width: 10rem;
     height: 3rem;
@@ -45,6 +59,7 @@ body {
     color: rgb(255, 255, 255);
     cursor: pointer;
     margin-top: 20px;
+    margin-right: 6rem;
     font-size: 16px;
     float: right;
     border: 2px 2px black;
