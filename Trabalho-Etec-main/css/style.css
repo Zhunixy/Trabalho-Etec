@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.logo {
+    float: left;
+    width: 100px;
+    height: 60px;
+    padding: 6px;
+    margin-right: 39rem;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.banner header {
+    z-index: 1;
+    margin-right: 75rem;
+    margin-bottom: 10rem;
+}
+
+nav {
+    display: flex;
+    background: transparent;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 60px;
+}
+
+nav ul li {
+    float: left;
+    padding: 13px;
+    list-style: none;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+nav ul li a {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    transition: all 0.4s;
+    transform: translateY(2px);
+}
+
+nav ul li a:hover {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transform: translateY(2px);
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+header {
+    margin-top: 10rem;
+    margin-left: 7rem;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+header p {
+    color: rgb(218, 216, 216);
+}
+
+header button {
+    margin-top: 20px;
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgba(255, 255, 255, 0);
+    background: rgb(255, 255, 255);
+    transition: all 0.4s;
+}
+
+header button:hover {
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 20px;
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0);
+}
+
+
+#inputAddress {
+    width: 22.5rem;
+}
+
+#inputAddress2 {
+    width: 46rem !important;
+    height: 7rem !important;
+}
+
+.form-label2 {
+    width: 30rem !important;
+}
+
+.btn {
+    width: 10rem !important;
+    height: 3.5rem;
+}
+
+.contato {
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+
+.form-control {
+    border: none !important;
+    border: 2px solid black !important;
+    border-radius: 1px !important;
+    margin: 10px;
+}
+
+.form-select {
+    border: none !important;
+    border: 2px solid black !important;
+    border-radius: 1px !important;
+    margin: 10px;
+}
+
+.row {
+    background: transparent;
+    border: 2px solid black;
+    padding: 20px;
+    margin-left: 5rem !important;
+    width: 50rem !important;
+    display: flex !important;
+}
+
+.h1-sobre {
+    margin-top: 10rem;
+}
+
+.img {
+    margin-left: 26rem !important;
+    background: rgb(255, 239, 239) !important;
+    margin: 20px;
+}
+
+.gx-5 {
+    border: none !important;
+}
+
+.title {
+    font-size: 4rem;
+    width: 30rem;
+}
