@@ -20,12 +20,12 @@ body {
 
 .header-nav {
     width: 100%;
-    background: transparent;
+    background: #87CEFA;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    height: 100px;
+    height: 130px;
     position: fixed;
     top: 0;
 }
@@ -55,9 +55,6 @@ body {
 
 #btn-mobile {
     display: none;
-    width: 8rem;
-    height: 2.8rem;
-    color: black;
 }
 
 @media (max-width: 600px) {
@@ -67,26 +64,22 @@ body {
        width: 100%;
        top: 70px;
        right: 0px;
-       background: transparent;
+       background: #87CEFA;
        height: 0px;
        margin-top: 25px;
-       z-index: 1000;
+       z-index: -1000;
        transition: .6s;
        visibility: hidden;
        overflow-y: hidden;
     }
     #nav.active #menu {
-        height: calc(100vh - 70px);
+        height: calc(60vh - 70px);
         visibility: visible;
         overflow-y: auto;
     }
     #menu a {
         padding: 1rem 0;
         margin: 0 1rem;
-        border: 0.2px solid rgb(0, 0, 0);
-        border-radius: 0.9rem;
-        width: 10rem;
-        height: 2rem;
     }
     #btn-mobile {
         display: flex;
@@ -100,7 +93,7 @@ body {
     #hamburguer {
         border-top: 2px solid;
         width: 20px;
-        color: coral;
+        color: white;
     }
     #hamburguer::after, #hamburguer::before {
         content: ' ';
@@ -124,7 +117,7 @@ body {
     }
 }
 
-
+/* Nav-bar Fim */
 
 .container-main {
     margin-top: 14rem;
@@ -155,49 +148,93 @@ body {
     color: rgb(255, 255, 255);
 }
 
-#bnt-mobile {
-    display: none;
-}
+/*______________Livros__________________*/
 
-@media (max-width: 600px) {
-    #bnt-mobile {
-        display: block;
-    }
-    #menu-ul {
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        right: 0px;
-        background: transparent;
-        display: block;
-        height: calc(100vh - 70px);
-        z-index: 1000;
-    }
-    #nav-menu.active #menu-ul{
-        display: block;
-    }
-    #menu-ul a {
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid rgba(0, 0, 0, .05);
-    }
-}
-
-
-/* https://youtu.be/DnODupiIAiE */
-
-
-
-
-
-.meio {
-
+.content {
     width: auto;
     height: 28rem;
     margin-top: 25rem;
     padding: auto;
 }
+
+.booklivro{
+    position: fixed;
+    top: 8%;
+    left: 18.1%;
+    border-radius: 2rem;
+    opacity:0.9;
+    transition: 0.5s;
+}
+
+h1{
+  	transition: transform 2s;
+    font-size: 60px;
+    color: white;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.card:hover > p{
+    opacity:1;
+    transform: scale(1.2);
+    top: 80%; 
+}
+
+
+img, #parent {
+    cursor: pointer;
+}
+
+.card:hover > img{
+    opacity:1;
+    transform: scale(1.2);
+             
+}
+
+.card header {
+    position:absolute;
+    top: 120%;
+    left: 0%;
+    padding: 1px;
+    border-radius:  25px;
+    width: 450px;
+    height: 90px;
+    transition: all .5s;
+    opacity:0;
+}
+
+.card:hover > header{
+    opacity:1;
+    width: 450px;
+    height: 90px;
+    transform: translateY(-120px);
+}
+
+ .card {
+    transition: transform .7s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background: white;
+    width: 450px;
+    height: 450px;
+}
+
+.card:hover{
+   transform: scale(1.08)
+}
+  .centeri{ 
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  span{  
+    position: relative;
+  }
+  
 
 
 .final {
