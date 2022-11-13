@@ -21,7 +21,7 @@ html {
 .header-blue {
   background: linear-gradient(135deg, #e09421, #ffbb00);
   background-color: #184e8e;
-  border-radius: 0px 0px 1rem 1rem;
+  border-radius: 0 0 1rem 1rem;
   margin-bottom: 90px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -469,4 +469,20 @@ nav ul li a:hover {
 
 .registro {
   width: 7rem !important;
+  margin-left: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000 !important;
+  border-radius: 5px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black !important;
+  border-radius: 5px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: white !important;
+  border-radius: 5px !important;
 }
