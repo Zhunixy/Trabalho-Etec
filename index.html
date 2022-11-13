@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="utf-8">
@@ -8,26 +8,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 
 <body>
     <div>
+
         <div class="header-blue">
             <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+                <button class="light" onclick="myFunction()"><i class="fa-solid fa-moon moon"></i></button>
+                <script>
+                    function myFunction() {
+                        var element = document.body;
+                        element.classList.toggle("dark-mode");
+                    }
+                </script>
                 <div class="container"><a class="navbar-brand" href="#">Center Tec</a><button class="navbar-toggler"
                         data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">
                         </span><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navcol-1">
                         <ul class="nav navbar-nav">
                             <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Início</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#somos">Sobre</a>
+                            </li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active"
+                                    href="#contato">Contato</a>
+                            </li>
                             <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle"
                                     data-toggle="dropdown" aria-expanded="false" href="#">Biblioteca </a>
                                 <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
-                                        href="./Trabalho-Etec-main/biblioteca/biblio.html">Livros</a><a class="dropdown-item"
-                                        role="presentation" href="./Trabalho-Etec-main/biblioteca/biblio.html">Gerenciamento</a><a
+                                        href="./Trabalho-Etec-main/biblioteca/biblio.html">Livros</a><a
+                                        class="dropdown-item" role="presentation"
+                                        href="./Trabalho-Etec-main/biblioteca/biblio.html">Gerenciamento</a><a
                                         class="dropdown-item" role="presentation"
                                         href="./Trabalho-Etec-main/biblioteca/biblio.html">Reservas</a></div>
                             </li>
@@ -36,21 +50,23 @@
                             <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input
                                     class="form-control search-field" type="search" name="search" id="search-field">
                             </div>
-                        </form><span class="navbar-text"> <a href="login.html" class="login">Logar</a></span><a
-                            class="btn btn-light action-button" role="button" href="login.html">Registrar</a>
+
+                        </form><span class="navbar-text"> <a href="login.html" class="login">Logar</a></span>
+                        <a class="btn btn-light action-button registro" role="button" href="cadastro.html">Registrar</a>
                     </div>
                 </div>
             </nav>
             <div class="container hero">
                 <div class="row">
                     <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
-                        <h1>Bem Vindo(a) a Center Tec</h1>
+                        <h1 class="titulo">Bem Vindo(a) a Center Tec</h1>
                         <p>Nós somos um sistema gerenciador da biblioteca da etec lins, faça suas reservas,
                             gerenciamento, e veja livros disponíveis para serem reservados </p><button
                             class="btn btn-light btn-lg action-button" type="button">Ler Mais</button>
+
                     </div>
                     <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
-                        <div class="iphone-mockup fundo"><img src="img/fundo.png" class="device">
+                        <div class="iphone-mockup fundo"><img src="img/fundo (1).png" class="device">
                         </div>
                     </div>
                 </div>
@@ -71,41 +87,83 @@
         <div class="row">
             <div class="col-12 col-sm-6 col-md-6">
                 <div class="ml-4">
-                    <h1> Quem somos</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ullam fugit assumenda impedit,
-                        veniam quas in atque saepe praesentium numquam laboriosam consectetur qui laudantium. Deleniti
-                        quas dolores sequi aliquid aut consequuntur aspernatur, molestias doloribus hic eum sit qui
-                        maxime tenetur! Facilis mollitia unde reprehenderit ut aperiam adipisci laudantium numquam, qui
-                        animi nemo. Exercitationem, id. Animi numquam itaque, deserunt mollitia delectus voluptas
-                        similique odio, repellendus fugiat repellat nesciunt incidunt explicabo consequuntur ut
-                        consectetur. Pariatur id, officiis exercitationem consectetur, vel officia tempora blanditiis
-                        velit temporibus, accusantium numquam corrupti esse eum tenetur? Nam dolorem culpa sapiente
-                        obcaecati atque non, pariatur excepturi reiciendis fugiat?
-                    </p>
+                    <h1 class="qm" id="somos"> Quem somos</h1>
+                    <p><i class="fa-solid fa-check ok"></i>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Nam dolor consectetur velit <br>
+                        <i class="fa-solid fa-check ok"></i> excepturi. Illum molestiae neque id quasi minima eius
+                        perferendis beatae, tempore provident <br>
+                        <i class="fa-solid fa-check ok"></i>tenetur repellat nesciunt saepe. Velit consectetur rerum,
+                        esse quibusdam labore nobis sit <br>
+                        <i class="fa-solid fa-check ok"></i> aperiam repellat, odio voluptatem ullam magnam? Nesciunt
+                        odit magni architecto! Inventore
+                        facilis ipsa <br> ipsam libero temporibus delectus quo quis, voluptatibus sequi eveniet
+                        dolorem
+                        atque fuga soluta, possimus sed velit hic quia sunt! Accusantium eaque voluptatem ut facilis
+                        inventore id quis <br> <i class="fa-solid fa-check ok"></i>sit fugit, dolor in quisquam impedit
+                        odio quos illum ullam. Recusandae et
+                        impedit temporibus? Eum ipsam corporis architecto culpa quo iste, qui deleniti esse!
                 </div>
             </div>
 
             <div class="col-12 col-sm-6 col-md-6">
-                <img src="img/fundo.jpg" alt="" class="img-fluid">
+                <img src="img/fundo-removebg-preview.png" alt="" class="img-fluid">
             </div>
 
             <div class="row mt-5">
                 <div class="col-12 col-sm-6 col-md-6">
-                    <img src="img/fundo.jpg" alt="" class="img-fluid">
+                    <img src="img/fundo-removebg-preview.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-6 col-md-6">
                     <div class=" ml-4 mt-4">
-                        <h1>Nosso Objetivo</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam dolor consectetur velit
-                            excepturi. Illum molestiae neque id quasi minima eius perferendis beatae, tempore provident
-                            tenetur repellat nesciunt saepe. Velit consectetur rerum, esse quibusdam labore nobis sit
-                            aperiam repellat, odio voluptatem ullam magnam? Nesciunt odit magni architecto! Inventore
-                            facilis ipsa ipsam libero temporibus delectus quo quis, voluptatibus sequi eveniet dolorem
+                        <h1 class="qm">Nosso Objetivo</h1>
+                        <p><i class="fa-solid fa-check ok "></i>Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit.
+                            Nam dolor consectetur velit <br>
+                            <i class="fa-solid fa-check ok "></i> excepturi. Illum molestiae neque id quasi minima eius
+                            perferendis beatae, tempore provident <br>
+                            <i class="fa-solid fa-check ok "></i>tenetur repellat nesciunt saepe. Velit consectetur
+                            rerum,
+                            esse quibusdam labore nobis sit <br>
+                            <i class="fa-solid fa-check ok "></i> aperiam repellat, odio voluptatem ullam magnam?
+                            Nesciunt
+                            odit magni architecto! Inventore
+                            facilis ipsa <br> ipsam libero temporibus delectus quo quis, voluptatibus sequi eveniet
+                            dolorem
                             atque fuga soluta, possimus sed velit hic quia sunt! Accusantium eaque voluptatem ut facilis
-                            inventore id quis sit fugit, dolor in quisquam impedit odio quos illum ullam. Recusandae et
+                            inventore id quis <br> <i class="fa-solid fa-check ok"></i>sit fugit, dolor in quisquam
+                            impedit
+                            odio quos illum ullam. Recusandae et
                             impedit temporibus? Eum ipsam corporis architecto culpa quo iste, qui deleniti esse!
                         </p>
                     </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6">
+                    <div class="ml-4">
+                        <h1 class="qm">Qualidades</h1>
+                        <p><i class="fa-solid fa-check ok "></i>Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit.
+                            Nam dolor consectetur velit <br>
+                            <i class="fa-solid fa-check ok "></i> excepturi. Illum molestiae neque id quasi minima eius
+                            perferendis beatae, tempore provident <br>
+                            <i class="fa-solid fa-check ok "></i>tenetur repellat nesciunt saepe. Velit consectetur
+                            rerum,
+                            esse quibusdam labore nobis sit <br>
+                            <i class="fa-solid fa-check ok "></i> aperiam repellat, odio voluptatem ullam magnam?
+                            Nesciunt
+                            odit magni architecto! Inventore
+                            facilis ipsa <br> ipsam libero temporibus delectus quo quis, voluptatibus sequi eveniet
+                            dolorem
+                            atque fuga soluta, possimus sed velit hic quia sunt! Accusantium eaque voluptatem ut facilis
+                            inventore id quis <br> <i class="fa-solid fa-check ok"></i>sit fugit, dolor in quisquam
+                            impedit
+                            odio quos illum ullam. Recusandae et
+                            impedit temporibus? Eum ipsam corporis architecto culpa quo iste, qui deleniti esse!
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6">
+                    <img src="img/fundo-removebg-preview.png" alt="" class="img-fluid">
                 </div>
 
             </div>
@@ -116,10 +174,10 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center mb-5">
-                    <h2 class="heading-section">Formulário para contato</h2>
+                    <h2 class="heading-section">Formulário para <span> contato </span></h2>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div id="contato" class="row justify-content-center">
                 <div class="col-md-12">
                     <div class="wrapper">
                         <div class="row mb-5">
@@ -169,7 +227,7 @@
                         <div class="row no-gutters">
                             <div class="col-md-7">
                                 <div class="contact-wrap w-100 p-md-5 p-4">
-                                    <h3 class="mb-4">Contato a Center tec</h3>
+                                    <h3 class="mb-4 qm">Contato a Center tec</h3>
                                     <div id="form-message-warning" class="mb-4"></div>
                                     <div id="form-message-success" class="mb-4">
                                     </div>
@@ -232,40 +290,68 @@
     </section>
     <br>
     <br>
-    <footer class="bg-dark text-light">
-        <div class="container-fluid py-3">
-            <div class="row">
-                <div class="col-4">
-                    <ul class="nav flex-column">
-                        <li class="nav-link"><a href="#">Início</a></li>
-                        <li class="nav-link"><a href="#">Sobre</a></li>
-                        <li class="nav-link"><a href="#">Contato</a></li>
-                        <li class="nav-link"><a href="#">Biblioteca</a></li>
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#"> Quem somos </a></li>
+                        <li><a href=""> nossos serviços </a></li>
+                        <li><a href=""> política de privacidade </a></li>
+                        <li><a href=""> programa de afiliados</a></li>
                     </ul>
                 </div>
-                <div class="col-8">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sed necessitatibus id asperiores
-                        <br>
-                        iste fugiat,praesentium obcaecati explicabo consequatur voluptatem eos earum blanditiis
-                        dolorembr <br>
-                        eaque veritatis libero? Magni, nam fugiat.
-                    </p>
-                    <ul class="nav">
-                        <li class="nav-link"><i class="fab fa-facebook fa-3x "></i></li>
-                        <li class="nav-link"><i class="fab fa-instagram fa-3x"></i></li>
-                        <li class="nav-link"><i class="fab fa-twitter fa-3x"></i></li>
-                        <li class="nav-link"><i class="fab fa-whatsapp fa-3x"></i></li>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Obter ajuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Ministerio da educação</a></li>
+                        <li><a href="#">NSA</a></li>
+                        <li><a href="#">ETEC LINS</a></li>
                     </ul>
                 </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Biblioteca</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Nos envie um e-mail</h4>
+                    <div class="form-sub">
+                        <form>
+                            <input type="email" placeholder="Digite o seu e-mail" required>
+                            <button>Enviar</button>
+                        </form>
+                    </div>
+
+                    <div class="medias-socias">
+                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                        <a href="#"> <i class="fa fa-instagram"></i> </a>
+                        <a href="#"> <i class="fa fa-twitter"></i> </a>
+                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                    </div>
+
+                </div>
+                <!--end footer col-->
             </div>
-        </div>
-        <div class="text-center" style="background-color: #0b3569; padding: 20px;">
-            &copy 2022 Copyright: <a href="#">Center Tec</a>
         </div>
     </footer>
 
-
+    <script src="https://kit.fontawesome.com/6dfd030f20.js" crossorigin="anonymous"></script>
+    <script src="js/modo-escuro.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>

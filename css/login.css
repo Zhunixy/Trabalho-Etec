@@ -12,14 +12,26 @@
 }
 
 button {
+    border: none !important;
     border-radius: 0.2rem !important;
     width: 35rem;
+    background: linear-gradient(135deg, #e09421, #ffbb00);
 }
 
 button:hover {
-    transition: 0.3s !important;
-    background: rgba(0, 0, 0, 0.596) !important;
-    color: rgb(255, 255, 255) !important;
-    border-radius: 0.2rem !important;
-    width: 35rem;
+    background: linear-gradient(135deg, #b3771d, #e6a902);
+}
+
+span {
+    color: #e09421;
+}
+
+@media(max-width: 999px) {
+    .abacate {
+        width: 26rem !important;
+    }
+
+    button {
+        width: 26rem !important;
+    }
 }
