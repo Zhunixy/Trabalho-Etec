@@ -1,0 +1,41 @@
+.header-blue {
+    height: 30px !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin-left: 5rem;
+    margin-top: 7rem;
+}
+
+.termos {
+    margin-top: 6rem !important;
+    text-align: left !important;
+}
+
+img {
+    margin-top: 100px;
+    float: right;
+    margin-right: 100px;
+}
+
+.menu {
+    margin-right: 5rem;
+}
+
+p {
+    width: 100% !important;
+}
+
+.light {
+    position: relative;
+}
+
+footer {
+    margin-top: 120rem;
+    overflow: hidden !important;
+}
