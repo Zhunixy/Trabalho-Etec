@@ -122,6 +122,16 @@ body {
 
 /*______________Livros__________________*/
 
+.cont{
+    width: auto;
+    margin-top: 15rem;
+}
+
+.cont2{
+    width: auto;
+    margin-top: 8rem;
+}
+
 .container-bk {
     display: flex;
     position: relative;
