@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
 
 * {
     margin: 0;
@@ -7,14 +7,14 @@
 }
 
 .abacate {
-    border-radius: 0.2rem !important;
+    border-radius: 2rem !important;
     border: 1.5px solid black !important;
 }
 
 button {
     border: none !important;
-    border-radius: 0.2rem !important;
-    width: 35rem;
+    border-radius: 2rem !important;
+    width: 15rem;
     background: linear-gradient(135deg, #e09421, #ffbb00);
 }
 
