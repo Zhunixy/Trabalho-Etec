@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: black !important;
+    background-color: #000000 !important;
 }
 
 .header-nav {
@@ -27,6 +27,7 @@ body {
     height: 130px;
     position: fixed;
     top: 0;
+    z-index: 1000;
 }
 
 #nav {
@@ -123,13 +124,11 @@ body {
 /*______________Livros__________________*/
 
 .cont{
-    width: auto;
+    width: 100%;
     margin-top: 15rem;
-}
-
-.cont2{
-    width: auto;
-    margin-top: 8rem;
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: center;
 }
 
 .container-bk {
@@ -149,6 +148,7 @@ body {
     text-align: center;
     align-items: center;
     transition: 0.8s;
+    
 }
 
 .container-img:hover {
