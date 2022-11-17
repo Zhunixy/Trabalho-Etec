@@ -13,8 +13,49 @@ html {
   color: white !important;
 }
 
-.dark-mode a {
-  color: white;
+.dark-mode .tel {
+  color: rgb(115, 147, 255) !important;
+}
+
+.dark-mode .ok {
+  color: #184e8e;
+}
+
+.dark-mode .qm {
+  color: #86bdff;
+}
+
+.dark-mode .contact {
+  color: #86bdff !important;
+}
+
+.dark-mode .btn {
+  background: linear-gradient(135deg, #0a138d, #010058) !important;
+}
+
+.dark-mode .btn:hover {
+  background: linear-gradient(135deg, #020eb8, #2e2caa) !important;
+}
+
+.dark-mode .header-blue .action-button {
+  background: white !important;
+  color: black;
+}
+
+.dark-mode .header-blue .action-button:hover {
+  background: rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255);
+}
+
+.dark-mode .light {
+  background: #080750;
+  color: white !important;
+  position: fixed;
+  cursor: pointer;
+}
+
+.dark-mode .header-blue {
+  background: linear-gradient(135deg, #010647, #080750) !important;
 }
 
 .header-blue {
@@ -134,6 +175,11 @@ html {
   transform: translateY(5px);
 }
 
+.dark-mode .header-blue .navbar .dropdown-menu .dropdown-item:hover {
+  background: #ffffff;
+  color: rgb(0, 0, 0) !important;
+}
+
 .header-blue .action-button,
 .header-blue .action-button:not(.disabled):active {
   border: 2px solid rgba(0, 0, 0, 0.7);
@@ -141,7 +187,7 @@ html {
   color: #ffffff;
   box-shadow: none;
   text-shadow: none;
-  padding: .3rem .6rem;
+  padding: .4rem .9rem;
   width: 10rem;
   background: black;
   transition: background-color 0.25s;
@@ -180,6 +226,14 @@ html {
   margin-top: 20px;
   text-align: center;
 
+}
+
+.col-12 {
+  margin-bottom: 50px !important;
+}
+
+.contact {
+  color: #dd8809;
 }
 
 .container,
@@ -267,6 +321,10 @@ html {
   font-size: 3rem;
 }
 
+.form {
+  margin-bottom: 6rem !important;
+}
+
 .sobre {
   text-align: center;
   margin-bottom: 10rem;
@@ -278,7 +336,11 @@ html {
 }
 
 span {
-  color: #e09421;
+  color: #000000;
+}
+
+.dark-mode span {
+  color: white !important;
 }
 
 input {
@@ -287,7 +349,7 @@ input {
 
 .text a {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 
 .btn {
@@ -310,10 +372,10 @@ input {
 
 .light {
   border: none;
-  background: rgb(207, 128, 10);
-  height: 50px;
-  font-size: 2rem;
-  width: 50px;
+  background: rgba(0, 0, 0, 0.404);
+  height: 40px;
+  font-size: 1.5rem;
+  width: 40px;
   margin-left: 20px;
   transition: 0.3s;
   cursor: pointer;
@@ -333,7 +395,19 @@ input {
 }
 
 .moon {
-  color: rgb(80, 79, 79);
+  color: rgb(255, 255, 255);
+}
+
+.dark-mode footer {
+  background-color: #010058 !important;
+}
+
+.dark-mode input {
+  background: #01053b;
+}
+
+.dark-mode textarea {
+  background: #010058;
 }
 
 footer {
@@ -482,17 +556,49 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: orange;
+  background: rgb(0, 0, 0);
   height: 8px;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
-  border: 2px solid orange;
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .form-control {
   border-radius: 0;
   border: 1px solid black;
+}
+
+.row {
+  margin-bottom: 20px !important;
+}
+
+.livross {
+  border-radius: 1rem !important;
+  margin-top: 50px;
+  justify-content: center !important;
+  display: flex !important;
+  text-align: center !important;
+  align-items: center !important;
+  width: 35rem !important;
+}
+
+.livro2 {
+  margin-top: 90px !important;
+}
+
+.livross img {
+  border-radius: 1rem !important;
+  width: 30rem
+}
+
+.animar {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+#azul {
+  animation-name: animar;
 }
