@@ -4,6 +4,15 @@
     --color-nav-light: 	#FFFAFA ;
     --color-nav-dark: 	#000000;
     --box-shadow-nav: 2px 6px 5px#000000bb;
+
+    --White-blue: #87CEFA;
+    --green:#27ae60;
+    --dark-color:#219150;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 
 * {
@@ -13,8 +22,14 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
 body {
-    background-color: #000000 !important;
+    background-color: white !important;
 }
 
 .header-nav {
@@ -46,6 +61,12 @@ body {
     color: white;
     text-transform: uppercase;
     padding: 3px 3px;
+    transition: all .6s;
+}
+
+#nav li a:hover {
+  transform: translateY(-3px);
+  transition: all .6s;
 }
 
 #menu {
@@ -120,6 +141,24 @@ body {
 /* Nav-bar Fim */
 
 
+/*______________Home__________________*/
+
+.botao {
+  border: 1px solid black;
+  border-radius: 2rem !important;
+  width: 200px;
+  height: 40px;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  transition: all .6s;
+}
+
+.botao:hover {
+  transition: all .6s;
+  background-color: #000000 !important; 
+  color: #ffffff !important;
+  cursor: pointer;
+}
 
 /*______________Livros__________________*/
 
