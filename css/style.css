@@ -594,11 +594,3 @@ body::-webkit-scrollbar-thumb {
   width: 30rem
 }
 
-.animar {
-  opacity: 1;
-  transform: translate(0px, 0px);
-}
-
-#azul {
-  animation-name: animar;
-}

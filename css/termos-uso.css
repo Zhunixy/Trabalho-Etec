@@ -39,3 +39,7 @@ footer {
     margin-top: 120rem;
     overflow: hidden !important;
 }
+
+#accordion {
+    text-align: center;
+}
