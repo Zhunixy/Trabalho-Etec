@@ -37,7 +37,8 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background:var(--black);
+    background: #87CEFA;
+    border-radius: 2rem;
 }
 
 .home{
