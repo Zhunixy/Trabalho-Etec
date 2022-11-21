@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Macondo&family=Mochiy+Pop+One&family=Poppins:ital,wght@0,400;0,700;1,100;1,400&family=Roboto:wght@100&display=swap');
 
 :root {
     --color-nav-light: 	#FFFAFA ;
@@ -165,49 +166,174 @@ body {
 
 .cont{
     width: 100%;
-    margin-top: 15rem;
-    margin-bottom: 8rem;
-    display: flex;
-    justify-content: center;
+    padding: 10px;
 }
 
-.container-bk {
-    display: flex;
-    position: relative;
-    top: 100px;
-    overflow: hidden;
-    margin: 25px;
+.cont button {
+  border: 1px solid black;
+  border-radius: 2rem !important;
+  background-color: transparent;
+  width: 160px;
+  height: 30px;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  text-transform: capitalize;
+  transition: all .6s;
+}
+
+.cont button:hover {
+  transition: all .6s;
+  background-color: #000000 !important; 
+  color: #ffffff !important;
+  cursor: pointer;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card-livro {
+  border: 1px solid #0f0f0f36;
+  width: 510px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  font-family: 'Poppins', sans-serif;
+}
+
+.titulo-livro {
+  margin-top: 1rem;
+  padding: 5px;
 }
 
 .container-img {
     margin: 30px;
-    background-color: white;
+    background-color: rgb(51, 48, 48);
     border-radius: 500px;
-    height: 450px;
-    width: 450px;
+    height: 220px;
+    width: 220px;
     text-align: center;
     align-items: center;
     transition: 0.8s;
-    
 }
-
-.container-img:hover {
-    transition: .8s;
-    transform: scale(1.04);
-}
-
 
 .bok {
-    width: 300px;
-    position: relative;
-    transition: .4s;
-    cursor: pointer;
+  position: relative;
+  transition: .4s;
+  cursor: pointer;
 }
 
 .bok:hover {
-    transform: scale(1.10);
-    transition: .5s;
+  transform: scale(1.10);
+  transition: .5s;
 }
+
+.container-img:hover {
+  transition: .8s;
+  transform: scale(1.04);
+}
+
+.card-livro:hover {
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+ 
+
+@media (max-width: 1240px) {
+  .cont {
+    transition: all 0.8s;
+  }
+
+  .card-container {
+    display: block;
+    transition: all 0.8s;
+  }
+
+  .card-livro {
+    border: 1px solid #0f0f0f36;
+    width: 600px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.8s;
+  }
+}
+
+@media (max-width: 648px) {
+  .cont {
+    transition: all 0.8s;
+  }
+
+  .card-container {
+    display: block;
+    transition: all 0.8s;
+  }
+
+  .card-livro {
+    border: 1px solid #0f0f0f36;
+    width: 500px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.8s;
+  }
+}
+
+@media (max-width: 540px) {
+  .cont {
+    transition: all 0.6s;
+  }
+
+  .cont img {
+    width: 120px;
+    transition: all 0.8s;
+  }
+
+  .container-img {
+    margin: 30px;
+    background-color: rgb(51, 48, 48);
+    border-radius: 500px;
+    height: 175px;
+    width: 175px;
+    text-align: center;
+    align-items: center;
+    transition: all 0.6s;
+  }  
+
+  .card-container {
+    display: block;
+    transition: all 0.6s;
+  }
+
+  .card-livro {
+    border: 1px solid #0f0f0f36;
+    width: 440px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.6s;
+  }
+}
+
 
 /*______________Footer__________________*/
 .fim {

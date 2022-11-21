@@ -38,14 +38,13 @@ html::-webkit-scrollbar-track{
 
 html::-webkit-scrollbar-thumb{
     background: #87CEFA;
-    border-radius: 2rem;
 }
 
 .home{
     padding:5rem 9%;
     margin-top: 8rem;
+    margin-bottom: 12rem;
 }
-
 
 .home{
     background:#87CEFA;
