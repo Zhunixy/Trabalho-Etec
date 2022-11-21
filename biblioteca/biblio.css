@@ -244,8 +244,6 @@ body {
   cursor: pointer;
 }
 
- 
-
 @media (max-width: 1240px) {
   .cont {
     transition: all 0.8s;
@@ -333,11 +331,70 @@ body {
     transition: all 0.6s;
   }
 }
+/*________________Livros__________________*/
 
+/*______________Transição__________________*/
+.separacao {
+  background: #87cefaea;
+  width: 100%;
+  height: 65rem;
+  padding: 10px;
+  margin-top: 18rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.separacao h2 {
+  font-size: 30px;
+  font-weight: 530;
+}
+
+.separacao p {
+  font-size: 18px;
+}
+
+.separacao div {
+  margin: 20px;
+  margin-right: 40px;
+}
+/*______________Transição__________________*/
+
+.contentfinal {
+  margin-top: 15rem;
+  width: 100%;
+}
+
+.cards2-container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.card2 {
+  border: 1px solid #0f0f0f36;
+  width: 300px;
+  height: 500px;
+  margin: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  font-family: 'Poppins', sans-serif;
+}
+
+.cardimg-container {
+  margin-top: 20px;
+}
+
+.cardinfo {
+  margin-top: 40px;
+}
 
 /*______________Footer__________________*/
 .fim {
-    margin-top: 40rem;
+    margin-top: 25rem;
 }
 
 footer {
