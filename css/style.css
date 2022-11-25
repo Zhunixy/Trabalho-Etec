@@ -48,9 +48,7 @@ html {
 }
 
 .dark-mode .light {
-  background: #080750;
   color: white !important;
-  position: fixed;
   cursor: pointer;
 }
 
@@ -271,6 +269,7 @@ html {
   font-size: 20px;
   margin-bottom: 30px;
   font-weight: 300;
+  text-align: left;
 }
 
 .header-blue .phone-holder {
@@ -372,15 +371,15 @@ input {
 
 .light {
   border: none;
-  background: rgba(0, 0, 0, 0.404);
   height: 40px;
+  background: none;
   font-size: 1.5rem;
   width: 40px;
   margin-left: 20px;
   transition: 0.3s;
   cursor: pointer;
   border-radius: 0.5rem;
-  position: fixed;
+  margin-bottom: 20px;
 }
 
 @media(max-width:1349px) {
@@ -391,7 +390,7 @@ input {
 
 .light:hover {
   color: #ffffff;
-  transform: translateY(10px);
+  transform: scale(1.2);
 }
 
 .moon {
@@ -576,13 +575,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .livross {
-  border-radius: 1rem !important;
   margin-top: 50px;
   justify-content: center !important;
   display: flex !important;
   text-align: center !important;
   align-items: center !important;
   width: 35rem !important;
+  height: 20rem;
 }
 
 .livro2 {
@@ -590,7 +589,36 @@ body::-webkit-scrollbar-thumb {
 }
 
 .livross img {
-  border-radius: 1rem !important;
-  width: 30rem
+  border-radius: 0.5rem;
+  width: 50rem
 }
 
+
+.header-blue img {
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-8px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-8px);
+  }
+}
+
+.icon {
+  margin-right: 7px;
+}
