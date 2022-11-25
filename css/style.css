@@ -53,7 +53,7 @@ html {
 }
 
 .dark-mode .header-blue {
-  background: linear-gradient(135deg, #010647, #080750) !important;
+  background: linear-gradient(135deg, #020531, #161555) !important;
 }
 
 .header-blue {
@@ -62,6 +62,10 @@ html {
   border-radius: 0 0 1rem 1rem;
   margin-bottom: 90px;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.dp {
+  color: white;
 }
 
 @media (min-width:768px) {
@@ -232,6 +236,10 @@ html {
 
 .contact {
   color: #dd8809;
+}
+
+.qm2 {
+  color: orange;
 }
 
 .container,
@@ -570,8 +578,10 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid black;
 }
 
-.row {
+.pqm,
+.qm {
   margin-bottom: 20px !important;
+  text-align: justify;
 }
 
 .livross {
@@ -590,9 +600,13 @@ body::-webkit-scrollbar-thumb {
 
 .livross img {
   border-radius: 0.5rem;
-  width: 50rem
+  width: 40rem;
+  height: 24rem;
 }
 
+.dp {
+  color: white !important;
+}
 
 .header-blue img {
   animation: bounce 1s infinite alternate;
@@ -621,4 +635,24 @@ body::-webkit-scrollbar-thumb {
 
 .icon {
   margin-right: 7px;
+}
+
+.obj {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+
+@media(min-width: 1999px) {
+  .nm {
+    display: inline;
+  }
+
+}
+
+@media(max-width:1112px) {
+  .nm {
+    display: inline;
+  }
 }
