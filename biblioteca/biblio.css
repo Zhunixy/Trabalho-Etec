@@ -367,25 +367,32 @@ body {
 
 @media (max-width: 650px) {
   .separacao {
-    transition: all .6s;
-  }
-
-  .separacao div {
-    width: 190px;
+    overflow: hidden;
+    overflow-x: hidden;
     transition: all .6s;
   }
 
   .separacao img {
     animation: movimento 6s;
     animation-iteration-count: infinite;
-    width: 190px;
+    width: 218px;
+  }
+
+  .separacao h2 {
+    font-size: 25px;
+    font-weight: 530;
+    transition: all .6s;
+  }
+
+  .separacao p {
+    font-size: 14px;
     transition: all .6s;
   }
 }
 /*______________Transição__________________*/
 
 .contentfinal {
-  margin-top: 15rem;
+  margin-top: 10rem;
   width: 100%;
 }
 
