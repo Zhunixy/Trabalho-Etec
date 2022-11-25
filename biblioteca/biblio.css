@@ -162,7 +162,7 @@ body {
   cursor: pointer;
 }
 
-/*______________Livros__________________*/
+/*______________Livros__________________*/ 
 
 .cont{
     width: 100%;
@@ -359,6 +359,29 @@ body {
   margin: 20px;
   margin-right: 40px;
 }
+
+.separacao img {
+  animation: movimento 6s;
+  animation-iteration-count: infinite;
+}
+
+@media (max-width: 650px) {
+  .separacao {
+    transition: all .6s;
+  }
+
+  .separacao div {
+    width: 190px;
+    transition: all .6s;
+  }
+
+  .separacao img {
+    animation: movimento 6s;
+    animation-iteration-count: infinite;
+    width: 190px;
+    transition: all .6s;
+  }
+}
 /*______________Transição__________________*/
 
 .contentfinal {
@@ -373,6 +396,7 @@ body {
   align-items: center;
 }
 
+
 .card2 {
   border: 1px solid #0f0f0f36;
   width: 300px;
@@ -382,6 +406,17 @@ body {
   text-align: center;
   box-shadow: var(--box-shadow);
   font-family: 'Poppins', sans-serif;
+  transition: all .4s;
+}
+
+.card2:hover {
+  border: 1px solid #0f0f0f36;
+  background: #000000;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  transition: all .6s;
 }
 
 .cardimg-container {
@@ -391,6 +426,56 @@ body {
 .cardinfo {
   margin-top: 40px;
 }
+
+.contentfinal button {
+  border: 1px solid black;
+  border-radius: 2rem !important;
+  background-color: white;
+  width: 180px;
+  height: 35px;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  text-transform: capitalize;
+  transition: all .6s;
+}
+
+.contentfinal button:hover {
+  border: 1px solid white;
+  background: transparent;
+  width: 200px;
+  color: #ffffff;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+
+@keyframes movimento {
+  0% {
+    transform: rotateZ(2deg);
+    transition: all .2s;
+  }
+
+  25% {
+    transform: translateY(-5px);
+    transition: all .1s;
+  }
+
+  50% {
+    transform: rotateZ(-2deg);
+    transition: all .2s;
+  }
+
+  75% {
+    transform: translateY(-5px);
+    transition: all .1s;
+  }
+
+  100% {
+    transform: rotateZ(2deg);
+    transition: all .2s;
+  }
+}
+
 
 /*______________Footer__________________*/
 .fim {
