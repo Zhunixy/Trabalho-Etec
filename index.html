@@ -16,6 +16,13 @@
 </head>
 
 <body>
+
+    <!--CONEXÃO PHP-->
+    <?php
+    include_once "bancodedados/php/conexao.php";
+    ?>
+    <!--CONEXÃO PHP-->
+
     <!--___NAVBAR DA PAGINA___-->
 
     <div vw class="enabled">
@@ -395,10 +402,10 @@
             <p>Lorem ipsum dolor sit amet.</p>
             <br>
             <br>
-            <form>
-                <input class="factt" type="text" placeholder="Insira aqui seu e-mail"> <br>
+            <form action="bancodedados/php/cadastro.php" method="POST">
+                <input id="email" class="factt" type="text" placeholder="Insira aqui seu e-mail"> <br>
                 <br>
-                <button class=" btn btn-primary">Enviar</button>
+                <button class="btn btn-primary">Enviar</button>
             </form>
         </div>
         <br>
